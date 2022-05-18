@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <!--Estilos Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--JS Bootstrap 5-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!--Estilos CSS-->
+    <link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <div class="container p-5 my-5">
+        <!--NavBar-->
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="recursos/logo.jpg" alt="Logo Drinkinc" width="60%">
+            </div>
+            <div class="col-sm-8">
+                <h1>INICIO</h1>
+            </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link" href="Paginas/preparaciones.html">Preparaciones</a>
+                            <a class="nav-link" href="Paginas/contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--Slider-->
+        <div class="row bg-primary my-3 py-3">
+            <div id="sliderFotos" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#sliderFotos" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#sliderFotos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#sliderFotos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#sliderFotos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="recursos/slider1.jpg" class="d-block w-60 mx-auto" alt="slider 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="recursos/slider2.jpg" class="d-block w-60 mx-auto " alt="slider 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="recursos/slider3.jpg" class="d-block w-60 mx-auto" alt="slider 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="recursos/slider4.jpg" class="d-block w-60 mx-auto" alt="slider 4">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#sliderFotos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#sliderFotos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!--quienes somos-->
+        <div class="row bg-primary my-3 py-3">
+            <div class="col-sm-4">
+                <h2>¿Quiénes somos?</h2>
+                <p>
+                    Somos un bar a las afueras de la estación republica, santiago, chile. Contamos con distitas
+                    variedades de bebidas alcohólicas
+                    y no alcohólicas, pero la función principal de esta pagina web es poder enseñar a como preparar
+                    estos deliciosos tragos.
+                </p>
+            </div>
+            <div class="col-sm-8">
+                <img class="img-fluid" src="recursos/somos2.jpg" alt="">
+            </div>
+        </div>
+        <!--donde estamos-->
+        <div class="row my-4 bg-primary py-4">
+            <div class="col-sm-6">
+                <iframe class="w-100"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.0702749237525!2d-70.66761938851877!3d-33.44747559977033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5aa99d68ae9%3A0x109b3a27d30579a5!2sRep%C3%BAblica!5e0!3m2!1ses!2scl!4v1650498602372!5m2!1ses!2scl"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-sm-6">
+                <h2>Donde estamos</h2>
+                <p>
+                    Nos encontramos en dirección de la salida que da al frente del instituto CIISA
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

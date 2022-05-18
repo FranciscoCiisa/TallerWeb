@@ -1,0 +1,25 @@
+/*
+    colores
+    #0003ff(claro)
+    #0057ff
+    #00abff
+    #00ffff(oscuro)
+*/
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Helvetica;
+}
+
+body{
+    background: url('../recursos/bar.jpg');
+    background-attachment: fixed;
+}
+
+.w-60{
+    width: 60%;
+}
+
+.container{
+    background-color: #0003ff!important;
+}
