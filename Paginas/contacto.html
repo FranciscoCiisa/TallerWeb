@@ -38,6 +38,7 @@
                         <div class="navbar-nav">
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                             <a class="nav-link" href="preparaciones.html">Preparaciones</a>
+                            <a class="nav-link" href="localesVentas.html">Recomendaciones de productos</a>
                             <a class="nav-link" href="#">Contacto</a>
                         </div>
                     </div>
@@ -48,7 +49,7 @@
         <div>
             
         </div>
-        <form action="">
+        <form action="" method="GET" onsubmit="return validar()">
             <table class="table table-hover text-center w-100">
                 <tr>
                     <!--nombre-->
@@ -57,6 +58,7 @@
                     <td>
                         <input class="largo" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre"
                             required minlength="3">
+                    <p class="text-danger" style="display:none" id="errorNombre">El largo del nombre debe ser superior a 3 </p>
                     </td>
                 </tr>
                 <tr>
@@ -66,6 +68,7 @@
                     <td>
                         <input class="largo" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido"
                             required minlength="3">
+                            <p class="text-danger" style="display:none" id="errorApellido">El largo del apellido debe ser superior a 3 </p>
                     </td>
                 </tr>
                 <tr>
@@ -75,6 +78,7 @@
                     <td>
                         <input class="largo" type="email" name="correo" id="correo"
                             placeholder="Ingrese su Correo Electronico" required>
+                            <p class="text-danger" style="display:none" id="errorCorreo">El largo del correo debe poseer @</p>
                     </td>
                 </tr>
                 <tr>
@@ -82,15 +86,16 @@
                     <td><label for="fechaNac">Fecha de Nacimiento</label></td>
                     <td><label class="label" for="">:</label></td>
                     <td><input type="date" name="fechaNac" id="fechaNac" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}">
-
+                    <p class="text-danger" style="display:none" id="errorEdad">La edad debe ser igual o superior a 18 años</p>
                     </td>
                 </tr>
                 <tr>
                     <td><label for="genero">Género</label></td>
                     <td><label class="label" for="">:</label></td>
                     <td>
-                        <input type="radio" name="genero" id="" required><label for="genero">Hombre</label>
-                        <input type="radio" name="genero" id="" required><label for="genero">Mujer</label>
+                        <input type="radio" name="genero" id="genero" required><label for="genero">Hombre</label>
+                        <input type="radio" name="genero" id="genero" required><label for="genero">Mujer</label>
+                        <p class="text-danger" style="display:none" id="errorGenero">Debe seleccionar 1 genero</p>
                     </td>
                 </tr>
                 <tr>
@@ -140,5 +145,6 @@
         </form>
     </div>
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../JS/validaciones.js"></script>
 </html>
